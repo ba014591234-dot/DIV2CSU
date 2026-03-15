@@ -31,7 +31,7 @@ export function PointsHistoryList({ data, type }: PointsHistoryListProps) {
       },
       {
         key: 'verified',
-        label: `상벌점 ${type === 'nco' ? '승인' : ''} 내역 (${verified.length})`,
+        label: `상벌점 부여 ${type === 'nco' ? '승인' : ''} 내역 (${verified.length})`,
         children: verified.map((d) => <PointCard key={d.id} pointId={d.id} type={type}/>),
       },
     );
